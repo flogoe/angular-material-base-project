@@ -36,9 +36,13 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
+import {ExampleAttributeDirective} from './directives/example-attribute.directive';
+import { HighlightDirective } from './directives/highlight.directive';
+import { HighlightHostbindingDirective } from './directives/highlight-hostbinding.directive';
 
 @NgModule({
-  declarations: [AppComponent],
+  // Insert custom Directives here
+  declarations: [AppComponent, ExampleAttributeDirective, HighlightDirective, HighlightHostbindingDirective],
   imports: [
     BrowserModule,         BrowserAnimationsModule,
     MatCheckboxModule,     MatCheckboxModule,
